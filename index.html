@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Cobrinha (Lá Ele)</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Snake_35967.ico" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <h1>Jogo da Cobra (Lá Ele)</h1>
+    </header>
+    
+        <section id="modificacoes">
+            <div class="input-mapas">
+                <h2>Criação do Jogo</h2>
+                <label for="tamanho-mapa">Tamanho Mapa: <input type="number" name="tamanho-mapa" id="tamanho-mapa" min="10" max="40" value="10"></label>
+                <label for="velocidade-serpente">Velocidade da Serpente: <input type="number" name="velocidade-serpente" id="velocidade-serpente" min="1" max="10" value="1"></label>
+                <button id="criar-mapa">Criar Mapa</button>
+            </div>
+            <div class="score">
+                <h2>Dados do Jogo</h2>
+                <label for="tamanho-serpente">Tamanho Serpente: <span id="tamanho-serpente">1</span></label>
+                <label for="qtde-macas-comidas">Qtde Maçãs Comidas <span id="qtde-macas-comidas">0</span></label>
+            </div>
+        </section>
+
+        <main id="Mapa">
+
+        </main>
+        
+        <section id="controles">
+            <h2>Controles</h2>
+            <div class="container botoes">
+                <button class="botao-movimento" id="cima">Cima</button>
+                <button class="botao-movimento" id="baixo">Baixo</button>
+                <button class="botao-movimento" id="direita">Direita</button>
+                <button class="botao-movimento" id="esquerda">Esquerda</button>
+            </div>
+        </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

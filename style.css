@@ -52,6 +52,7 @@ body {
 .score {
     display: flex;
     flex-direction: column;
+    position: inherit;
 }
 
 #modificacoes {
@@ -119,6 +120,11 @@ span {
     background-color: var(--cor-controles);
 }
 
+section > div, section > h2 {
+    margin-top: 100px;
+}
+
+
 #cima {
     grid-area: 1 / 2 / 2 / 3;
 }
@@ -140,10 +146,6 @@ span {
     grid-template: repeat(3, 1fr) / repeat(3, 1fr);
     justify-items: center;
     align-items: center;
-}
-
-.score {
-    position: inherit;
 }
 
 @media screen and (max-width: 1060px) {
@@ -174,6 +176,10 @@ span {
 
     .botoes {
         margin-top: 20%;
+    }
+
+    section > div, section > h2 {
+        margin-top: 0px;
     }
 }
 
